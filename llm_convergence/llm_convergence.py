@@ -40,7 +40,7 @@ def header() -> rx.Component:
         ),
         rx.link(
             rx.icon("github", size=16, color="gray"),
-            href="https://github.com/reasonance-lab/LLMConv",
+            href="https://github.com/reasonance-lab/reasonance",
             is_external=True,
         ),
         width="100%",
