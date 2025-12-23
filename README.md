@@ -1,6 +1,6 @@
 # Reasonance
 
-A collaborative AI reasoning platform that facilitates dialogue between Claude (Anthropic) and GPT (OpenAI). The application enables two LLMs to independently respond to prompts, critique each other's outputs, and iteratively converge on shared conclusions through multiple rounds of discussion.
+A collaborative AI reasoning platform built with [Reflex](https://reflex.dev) that facilitates dialogue between Claude (Anthropic) and GPT (OpenAI). The application enables two LLMs to independently respond to prompts, critique each other's outputs, and iteratively converge on shared conclusions through multiple rounds of discussion.
 
 ## Features
 
