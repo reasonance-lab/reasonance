@@ -119,6 +119,45 @@ docker run -p 80:80 \
 
 The application will be available at http://localhost
 
+## Fly.io Deployment
+
+This project is pre-configured for deployment to [Fly.io](https://fly.io). The repository includes a `fly.toml` configuration file ready for deployment.
+
+**Deploy to Fly.io**:
+
+1. **Install the Fly CLI** (if not already installed):
+   ```bash
+   curl -L https://fly.io/install.sh | sh
+   ```
+
+2. **Authenticate with Fly.io**:
+   ```bash
+   fly auth login
+   ```
+
+3. **Launch the application**:
+   ```bash
+   fly launch
+   ```
+   This will detect the existing `fly.toml` and prompt you to configure the deployment.
+
+4. **Set your API keys as secrets**:
+   ```bash
+   fly secrets set ANTHROPIC_API_KEY=your-anthropic-key
+   fly secrets set OPENAI_API_KEY=your-openai-key
+   ```
+
+5. **Deploy updates**:
+   ```bash
+   fly deploy
+   ```
+
+The application will be deployed with:
+- 1 shared CPU
+- 2GB RAM
+- Auto-scaling enabled (min: 0 machines)
+- HTTPS enforced
+
 ## Running Tests
 
 ```bash
