@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for reasonance on 2025-12-22T22:39:37-06:00
+# fly.toml app configuration file generated for reasonance on 2026-01-08T04:41:57Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = 'reasonance'
-primary_region = 'dfw'
+primary_region = 'iad'
 
 [build]
 
@@ -17,6 +17,7 @@ primary_region = 'dfw'
   processes = ['app']
 
 [[vm]]
-  memory = '2gb'
+  memory = '1gb'
+  cpu_kind = 'shared'
   cpus = 1
-  memory_mb = 2048
+  memory_mb = 1024
